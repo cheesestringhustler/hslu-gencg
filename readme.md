@@ -44,3 +44,8 @@ So I went with P5.js for now. Adding a rotation to the cubes where every cube sh
 <iframe src="content/day02/p5CubeGrid/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
+### Further
+
+After some quick googling I found a bash version of the Commodore 10Print command with following results.
+
+![Image](content/day02/10print.png)
