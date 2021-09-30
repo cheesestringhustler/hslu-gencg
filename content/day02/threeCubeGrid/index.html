@@ -1,0 +1,87 @@
+<html>
+
+<body>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        canvas {
+            position: fixed;
+            /* border: 1px solid blue;    */
+        }
+    </style>
+
+    <!-- <script src="./three.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <!-- <script src="https://unpkg.com/threejs-meshline@2.0.11/src/index.js"></script> -->
+    <script src="./THREE.MeshLine.js"></script>
+    <script type="module">
+
+        // Find the latest version by visiting https://cdn.skypack.dev/three.
+
+        // import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js';
+        // import { MeshLine, MeshLineMaterial, MeshLineRaycast } from 'three.meshline';
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, autoSize: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);//new THREE.OrthographicCamera(window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, 1, 1000);//new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
+        camera.position.set(0, 0, 100);
+        camera.lookAt(0, 0, 0);
+        // camera.zoom = 10;
+        // camera.updateProjectionMatrix();
+
+        const scene = new THREE.Scene();
+
+        const geometry = new THREE.BoxGeometry(10, 10, 10);
+        const cube = new THREE.Mesh(
+            //box geometry with a width, height and depth
+            geometry,
+
+            //apply a mesh basic material to our mesh
+            new THREE.MeshBasicMaterial({
+                color: 0x00ffff
+            })
+        );
+        let points = [];
+            points.push( new THREE.Vector3(-10, 0, 0 ) );
+            points.push( new THREE.Vector3( 10, 0, 0 ) );
+            points.push( new THREE.Vector3( 0, 10, 0 ) );
+
+        // const line = new MeshLine();
+        // line.setPoints(points)
+        // const material = new MeshLineMaterial({ color: 0xffffff, lineWidth: 1 });
+        // const mesh = new THREE.Mesh(line, material);
+
+        const edges = new THREE.EdgesGeometry(geometry);
+        const line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff, linewidth: 5 }));
+
+        // const plane = new THREE.Plane().setFromNormalAndCoplanarPoint(new THREE.Vector3(0, 0, 1), new THREE.Vector3(0, 0, 1));
+        // var raycaster = new THREE.Raycaster();
+        // var corner = new THREE.Vector2();
+        // var cornerPoint = new THREE.Vector3();
+        // corner.set(-1, -1); // NDC of the bottom-left corner
+        // raycaster.setFromCamera(corner, camera);
+        // raycaster.ray.intersectPlane(plane, cornerPoint);
+
+        // cube.position.copy(cornerPoint).add(new THREE.Vector3(1, 1, -1));
+
+        scene.add(line);
+        // scene.add(cube);
+
+        renderer.render(scene, camera);
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+        }
+    </script>
+</body>
+
+</html>

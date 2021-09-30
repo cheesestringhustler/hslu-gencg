@@ -1,3 +1,5 @@
+<a href="https://cheesestringhustler.github.io/hslu-gencg-journal/#day-01">This repo is published here</a>
+
 # Day 01
 
 ## Sprout
@@ -17,3 +19,28 @@ A reproduction in three.js generating random points on each page load.
 {% raw %}
 <iframe src="content/day01/3dgraph/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+
+# Day 02
+
+## Iterative Patterns
+
+### Paper Sketch
+
+For the sketch I went with a simple grid, which I imagined to be made of cubes.
+
+![Image](content/day02/grid_paper.jpeg)
+
+### Code
+
+Firstly I started trying to implement the sketch in three.js but for my simple purposes I felt quite overwhelmed having to work with <a href="https://github.com/spite/THREE.MeshLine/blob/master/README.md">MeshGeometry</a> just to change lineWidth.
+
+{% raw %}
+<iframe src="content/day02/p5CubeGrid/index.html" width="50%" height="225" frameborder="no"></iframe>
+{% endraw %}
+
+So I went with P5.js for now.
+
+{% raw %}
+<iframe src="content/day02/p5CubeGrid/index.html" width="100%" height="450" frameborder="no"></iframe>
+{% endraw %}
+
