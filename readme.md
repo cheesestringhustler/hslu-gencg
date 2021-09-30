@@ -35,7 +35,7 @@ For the sketch I went with a simple grid, which I imagined to be made of cubes.
 Firstly I started trying to implement the sketch in three.js but for my simple purposes I felt quite overwhelmed having to work with <a href="https://github.com/spite/THREE.MeshLine/blob/master/README.md">MeshGeometry</a> just to change lineWidth.
 
 {% raw %}
-<iframe src="content/day02/p5CubeGrid/index.html" width="50%" height="225" frameborder="no"></iframe>
+<iframe src="content/day02/threeCubeGrid/index.html" width="50%" height="225" frameborder="no"></iframe>
 {% endraw %}
 
 So I went with P5.js for now.
