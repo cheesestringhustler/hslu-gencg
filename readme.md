@@ -38,7 +38,7 @@ Firstly I started trying to implement the sketch in three.js but for my simple p
 <iframe src="content/day02/threeCubeGrid/index.html" width="50%" height="225" frameborder="no"></iframe>
 {% endraw %}
 
-So I went with P5.js for now.
+So I went with P5.js for now. Adding a rotation to the cubes where every cube should have a diffrent rotation (0-360). Additionally I mapped a color parameter to the rotation.
 
 {% raw %}
 <iframe src="content/day02/p5CubeGrid/index.html" width="100%" height="450" frameborder="no"></iframe>
