@@ -49,3 +49,22 @@ So I went with P5.js for now. Adding a rotation to the cubes where every cube sh
 After some quick googling I found a bash version of the Commodore 10Print command with following results.
 
 ![Image](content/day02/10print.png)
+
+# Day 03
+
+On this day we focused on representing time in diffrent shapes and sizes.
+
+## Idea 1: Sketch
+
+In my first idea I wanted to create a grid of life representing your time alive in grids, similar to...
+![Image](content/day03/images/gridoflife.png)
+
+And I wanted to calculate to age of the viewer with ML and webcam access but quicklt discared this part to focus on the actual representation.
+
+![Image](content/day03/images/sketch1.jpg)
+
+I also wanted to have some kind of progress visible preferably in seconds, but in a 100 year live this would take ~500 Mio points to represent, making it computional intensive for P5.js. So I settled on just changing the pixels in the window for a 24h span.
+
+{% raw %}
+<iframe src="content/day03/gridoflife/index.html" width="100%" height="450" frameborder="no"></iframe>
+{% endraw %}
