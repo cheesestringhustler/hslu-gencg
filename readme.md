@@ -65,6 +65,11 @@ And I wanted to calculate to age of the viewer with ML and webcam access but qui
 
 I also wanted to have some kind of progress visible preferably in seconds, but in a 100 year live this would take ~500 Mio points to represent, making it computional intensive for P5.js. So I settled on just changing the pixels in the window for a 24h span.
 
+## Idea 1: Code
+
 {% raw %}
 <iframe src="content/day03/gridoflife/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+
+## Idea 2: 
+

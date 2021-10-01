@@ -1,0 +1,82 @@
+<html>
+
+<body>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        canvas {
+            position: fixed;
+            /* border: 1px solid blue;    */
+        }
+    </style>
+
+    <!-- <script src="./three.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <script type="module">
+
+        // RENDERER
+        const renderer = new THREE.WebGLRenderer({ antialias: true, autoSize: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        document.body.appendChild(renderer.domElement);
+
+        // WebGL background color
+        renderer.setClearColor("#999", 1);
+
+        // CAMERA
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);//new THREE.OrthographicCamera(window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, 1, 1000);//new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
+        camera.position.set(0, 0, 100);
+        camera.lookAt(0, 0, 0);
+
+        // SCENE
+        const scene = new THREE.Scene();
+
+        //Create a DirectionalLight and turn on shadows for the light
+        const light = new THREE.DirectionalLight(0xffffff, 1, 100);
+        light.position.set(0, 1, 0); //default; light shining from top
+        light.castShadow = true; // default false
+        scene.add(light);
+
+        //Set up shadow properties for the light
+        light.shadow.mapSize.width = 512; // default
+        light.shadow.mapSize.height = 512; // default
+        light.shadow.camera.near = 0.5; // default
+        light.shadow.camera.far = 500; // default
+
+        //Create a sphere that cast shadows (but does not receive them)
+        const sphereGeometry = new THREE.SphereGeometry(5, 32, 32);
+        const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
+        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+        sphere.castShadow = true; //default is false
+        sphere.receiveShadow = false; //default
+        scene.add(sphere);
+
+        //Create a plane that receives shadows (but does not cast them)
+        const planeGeometry = new THREE.PlaneGeometry(20, 20, 32, 32);
+        const planeMaterial = new THREE.MeshStandardMaterial({ color: 0xf0ff00 })
+        const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+        plane.receiveShadow = true;
+        scene.add(plane);
+
+        //Create a helper for the shadow camera (optional)
+        const helper = new THREE.CameraHelper(light.shadow.camera);
+        scene.add(helper);
+
+        // RENDER 
+        renderer.render(scene, camera);
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+        }
+    </script>
+</body>
+
+</html>
