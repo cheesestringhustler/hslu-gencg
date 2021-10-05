@@ -41,7 +41,7 @@ Firstly I started trying to implement the sketch in three.js but for my simple p
 So I went with P5.js for now. Adding a rotation to the cubes where every cube should have a diffrent rotation (0-360). Additionally I mapped a color parameter to the rotation.
 
 {% raw %}
-<iframe src="content/day02/p5CubeGrid/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="content/day02/p5CubeGrid/index.html" width="100%" height="550" frameborder="no"></iframe>
 {% endraw %}
 
 ### Further
@@ -73,3 +73,6 @@ I also wanted to have some kind of progress visible preferably in seconds, but i
 
 ## Idea 2: 
 
+{% raw %}
+<iframe src="content/day03/neonsunset/index.html" width="100%" height="450" frameborder="no"></iframe>
+{% endraw %}
