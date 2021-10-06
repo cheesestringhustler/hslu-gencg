@@ -51,10 +51,11 @@ After some quick googling I found a bash version of the Commodore 10Print comman
 ![Image](content/day02/10print.png)
 
 # Day 03
+## Clock
 
 On this day we focused on representing time in diffrent shapes and sizes.
 
-## Idea 1: Sketch
+### Idea 1: Sketch
 
 In my first idea I wanted to create a grid of life representing your time alive in grids, similar to...
 ![Image](content/day03/images/gridoflife.png)
@@ -65,17 +66,36 @@ And I wanted to calculate to age of the viewer with ML and webcam access but qui
 
 I also wanted to have some kind of progress visible preferably in seconds, but in a 100 year live this would take ~500 Mio points to represent, making it computional intensive for P5.js. So I settled on just changing the pixels in the window for a 24h span.
 
-## Idea 1: Code
+### Idea 1: Code
 
 {% raw %}
 <iframe src="content/day03/gridoflife/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
-## Idea 2:  Code
+### Idea 2:  Code
 
-For the second idea I had to try out a few things until I settled on a input from a colleague ("Hey this reminds me of some neon sunset"). I got further inspiration and color from google search (neon sunset) {% raw %} <img src="https://steamuserimages-a.akamaihd.net/ugc/949590558702165309/B700E129E73B8BD33AF045A37BD6928582EACB44/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" height="100" width="auto"/> {% endraw %}.<br>
+For the second idea I had to try out a few things until I settled on a input from a colleague ("Hey this reminds me of some neon sunset"). I got further inspiration and color from google search (neon sunset) <img src="content/day03/images/neon.jpeg" height="100" width="auto"/>.<br>
 P5js allowed for quick POC but with the amount of cubes in this sketch it greatly suffers performance.
 
 {% raw %}
 <iframe src="content/day03/neonsunset/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+
+# Day 04
+## Drawing Machines
+
+### Idea 1
+For Drawing Machines I had a few Ideas but the one most instresting on a technical level was acceloremter data from a mobile device in a browser.
+There is an experimental API <a href="https://developer.mozilla.org/en-US/docs/Web/API/Accelerometer">MDN</a>, <a href="https://medium.com/flawless-app-stories/how-to-request-device-motion-and-orientation-permission-in-ios-13-74fc9d6cd140">Medium Post</a> but it requires that the website uses HTTPS and the user initiates the request for permission via a button or similar. 
+
+For HTTPS I used <a href="https://ngrok.com">ngrok</a> to create a secure connection to my localhost.
+
+Although this website is viewable on all devices for the Accelerometer to work one must use a mobile device and press the button in the upper left corner.
+{% raw %}
+<iframe src="content/day04/accelerometer/index.html" width="100%" height="450" frameborder="no"></iframe>
+{% endraw %}
+
+<video width="443" height="960" controls>
+  <source src="content/day04/images/accDot.mov" type="video/mov">
+Your browser does not support the video tag.
+</video>
