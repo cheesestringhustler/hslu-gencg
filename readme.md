@@ -1,5 +1,7 @@
 # Day 01
 
+<a href="https://cheesestringhustler.github.io/hslu-gencg-journal/#day-01">This repo is published here</a>
+
 ## Sprout
 
 As first exercise we played a physical game called sprout.
@@ -94,7 +96,7 @@ Although this <a href='content/day04/accelerometer/index.html'>website</a> is vi
 {% endraw %}
 
 <video width="443" height="960" controls>
-  <source src="content/day04/images/accDot.mov" type="video/mov">
+  <source src="content/day04/images/accDot.mov">
 Your browser does not support the video tag.
 </video>
 
