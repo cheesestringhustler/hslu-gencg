@@ -1,7 +1,7 @@
 let windowWidth = window.innerWidth;
 let windowHeight = window.innerHeight;
 const sphereSize = 200;
-const cubeSize = 20;
+const cubeSize = 30;
 const n = 20;
 const nCol = windowWidth / n;
 let xoff = 0.0;
