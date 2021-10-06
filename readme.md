@@ -101,3 +101,13 @@ Your browser does not support the video tag.
 </video>
 
 ### Idea 2
+For my second Idea I wanted to create something similar to the classic music visualizer from iTunes <img src="content/day04/images/musicVis.png" width="100"/>.
+I took some inspiration the book Generative Gestaltung <img src="content/day04/images/p223.jpeg" width="100"/>.
+
+A first test of the code from the book
+![Image](content/day04/images/agentTest.png)
+
+And after getting the mic input working, the result is as following.
+{% raw %}
+<iframe src="content/day04/micVis/index.html" width="100%" height="450" frameborder="no"></iframe>
+{% endraw %}
