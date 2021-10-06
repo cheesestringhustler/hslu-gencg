@@ -73,7 +73,7 @@ I also wanted to have some kind of progress visible preferably in seconds, but i
 
 ## Idea 2:  Code
 
-For the second idea I had to try out a few things until I settled on a input from a colleague ("Hey this reminds me of some neon sunset"). I got further inspiration and color from google search <img src="https://steamuserimages-a.akamaihd.net/ugc/949590558702165309/B700E129E73B8BD33AF045A37BD6928582EACB44/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" height="50"/>.<br>
+For the second idea I had to try out a few things until I settled on a input from a colleague ("Hey this reminds me of some neon sunset"). I got further inspiration and color from google search (neon sunset) <img src="https://steamuserimages-a.akamaihd.net/ugc/949590558702165309/B700E129E73B8BD33AF045A37BD6928582EACB44/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" height="100" width="auto"/>.<br>
 P5js allowed for quick POC but with the amount of cubes in this sketch it greatly suffers performance.
 
 {% raw %}
