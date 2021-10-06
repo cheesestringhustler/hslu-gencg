@@ -71,7 +71,10 @@ I also wanted to have some kind of progress visible preferably in seconds, but i
 <iframe src="content/day03/gridoflife/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
-## Idea 2: 
+## Idea 2:  Code
+
+For the second idea I had to try out a few things until I settled on a input from a colleague ("Hey this reminds me of some neon sunset"). I got further inspiration and color from google search <img src="https://steamuserimages-a.akamaihd.net/ugc/949590558702165309/B700E129E73B8BD33AF045A37BD6928582EACB44/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" height="150"/>.
+P5js allowed for quick POC but with the amount of cubes in this sketch it greatly suffers performance.
 
 {% raw %}
 <iframe src="content/day03/neonsunset/index.html" width="100%" height="450" frameborder="no"></iframe>
