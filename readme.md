@@ -92,11 +92,11 @@ For HTTPS I used <a href="https://ngrok.com">ngrok</a> to create a secure connec
 
 Although this <a href='content/day04/accelerometer/index.html'>website</a> is viewable on all devices for the Accelerometer to work one must use a mobile device and press the button in the upper left corner.
 {% raw %}
-<iframe src="content/day04/accelerometer/index.html" width="443" height="960" frameborder="no"></iframe>
+<iframe src="content/day04/accelerometer/index.html" width="200" height="200" frameborder="no"></iframe>
 {% endraw %}
 
 <video width="443" height="960" controls>
-  <source src="content/day04/images/accDot.mov">
+  <source src="content/day04/images/accDot.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
