@@ -4,10 +4,10 @@ let formResolution = 5;
 let x = [];
 let y = [];
 let stepSize = 5;
-let initRadius = 100;
+let initRadius = 300;
 let circleQueue = [];
 let maxQueueSize = 120;
-let circleSpace = 10;
+let circleSpace = 20;
 let mic;
 let amp;
 
@@ -16,8 +16,8 @@ function setup() {
 
   frameRate(30);
 
-  centerX = window.innerWidth / 2 + initRadius * 2;
-  centerY = window.innerHeight / 2 + initRadius;
+  centerX = window.innerWidth / 2 + initRadius /2;
+  centerY = window.innerHeight / 2 + initRadius/2;
 
   var angle = radians(360 / formResolution);
   for (var i = 0; i < formResolution; i++) {
@@ -57,11 +57,9 @@ function draw() {
   // tmpArr.push({x: x[1] + centerX, y: y[1] + centerY});
 
   if (circleQueue.length > maxQueueSize) {
-    circleQueue.pop();
-    circleQueue.unshift(tmpArr);
-  } else {
-    circleQueue.unshift(tmpArr);
-  }
+    circleQueue.pop();  
+  } 
+  circleQueue.unshift(tmpArr);
 
   fill(0, 0)
   beginShape();
