@@ -19,6 +19,7 @@ A reproduction in three.js generating random points on each page load.
 {% raw %}
 <iframe src="content/day01/3dgraph/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+<a href="content/day01/3dgraph/index.html" target="_blank">Fullscreen</a>
 
 # Day 02
 
@@ -37,12 +38,14 @@ Firstly I started trying to implement the sketch in three.js but for my simple p
 {% raw %}
 <iframe src="content/day02/threeCubeGrid/index.html" width="50%" height="225" frameborder="no"></iframe>
 {% endraw %}
+<a href="content/day02/threeCubeGrid/index.html" target="_blank">Fullscreen</a>
 
 So I went with P5.js for now. Adding a rotation to the cubes where every cube should have a diffrent rotation (0-360). Additionally I mapped a color parameter to the rotation.
 
 {% raw %}
 <iframe src="content/day02/p5CubeGrid/index.html" width="100%" height="550" frameborder="no"></iframe>
 {% endraw %}
+<a href="content/day02/p5CubeGrid/index.html" target="_blank">Fullscreen</a>
 
 ### Further
 
@@ -72,6 +75,8 @@ I also wanted to have some kind of progress visible preferably in seconds, but i
 <iframe src="content/day03/gridoflife/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
+<a href="content/day03/gridoflife/index.html" target="_blank">Fullscreen</a>
+
 ### Idea 2:  Code
 
 For the second idea I had to try out a few things until I settled on a input from a colleague ("Hey this reminds me of some neon sunset"). I got further inspiration and color from google search (neon sunset) <img src="content/day03/images/neon.jpeg" height="100" width="auto"/>.<br>
@@ -80,6 +85,8 @@ P5js allowed for quick POC but with the amount of cubes in this sketch it greatl
 {% raw %}
 <iframe src="content/day03/neonsunset/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+
+<a href="content/day03/neonsunset/index.html" target="_blank">Fullscreen</a>
 
 # Day 04
 ## Drawing Machines
@@ -94,6 +101,8 @@ Although this <a href='content/day04/accelerometer/index.html'>website</a> is vi
 {% raw %}
 <iframe src="content/day04/accelerometer/index.html" width="200" height="200" frameborder="no"></iframe>
 {% endraw %}
+
+<a href="content/day04/accelerometer/index.html" target="_blank">Fullscreen</a>
 
 <video width="443" height="960" controls>
   <source src="content/day04/images/accDot.mp4" type="video/mp4">
@@ -112,12 +121,14 @@ And after getting the mic input working, the result is as following.
 <iframe src="content/day04/micVis/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
+<a href="content/day04/micVis/index.html" target="_blank">Fullscreen</a>
+
 # Day 05
 ## Faces
 
 For faces I wasn't quite sure what to do. I was intrested in using the webcam to track face features but no idea what to do with those coordinates.
 
-With some input from Guillaume and some other artists I experimented replicating faces from Bruno Murani <img src="content/day05/images/BrunoMunariBook.jpeg" height="200" width="auto"/> <img src="content/day05/images/BrunoMunariSketch.jpeg" height="200" width="auto"/> <br>
+With some input from Guillaume and some other artists I experimented replicating faces from Bruno Murani <img src="content/day05/images/BrunoMunariBook.jpeg" width="150"/> <img src="content/day05/images/BrunoMunariSketch.jpeg" width="150"/> <br>
 I settled on this rather geometric style, which was fun connecting the face landmarks to generate lines.
 
 ![Image](content/day05/images/debug.png)
@@ -131,6 +142,9 @@ Your browser does not support the video tag.
 <iframe src="content/day05/mediapipe_facemesh/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
+<a href="content/day05/mediapipe_facemesh/index.html" target="_blank">Fullscreen</a>
+
 # Day 06
 ## Pixels
+
 

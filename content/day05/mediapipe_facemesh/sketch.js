@@ -43,8 +43,8 @@ let myFaces = [];
 // webcam capture, managed by p5.js
 let capture;
 
-const DEBUG = true;
-// const DEBUG = false;
+// const DEBUG = true;
+const DEBUG = false;
 
 // Load the MediaPipe facemesh model assets.
 facemesh.load().then(function (_model) {
