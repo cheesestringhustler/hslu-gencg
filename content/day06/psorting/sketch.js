@@ -1,6 +1,6 @@
 var img;
 var colors = [];
-var sortMode = null;
+var sortMode = 8;
 
 function preload() {
   loadImage('data/m_17447.png', setImage);
